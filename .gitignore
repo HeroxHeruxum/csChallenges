@@ -1,0 +1,38 @@
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# ASP.NET
+wwwroot/
+
+# User-specific files
+*.rsuser
+*.vsp
+*.pdb
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+
+# Others
+*.db
+*.cache
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
