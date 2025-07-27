@@ -20,10 +20,10 @@ jobs:
         dotnet-version: 9.0.x
 
     - name: Restore all projects
-      run: dotnet restore ./csChallanges
+      run: dotnet restore
 
     - name: Build all projects
-      run: dotnet build ./csChallanges --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
 
     - name: Test all projects
-      run: dotnet test ./csChallanges --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal
