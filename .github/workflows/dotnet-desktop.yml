@@ -38,6 +38,10 @@
 
 name: .NET Core Desktop
 
+on:
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
 
   build:
