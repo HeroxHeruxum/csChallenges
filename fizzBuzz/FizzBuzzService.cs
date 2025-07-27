@@ -15,7 +15,7 @@ public class FizzBuzzService
     public static string CreateFizzBuzzForNumber(int numberToEvaluate)
     {
         string result = numberToEvaluate + ": ";
-        if ((numberToEvaluate % 3) > 0)
+        if (IsDividableBy3(numberToEvaluate))
         {
             result += "Fizz";
         }
@@ -25,5 +25,9 @@ public class FizzBuzzService
         }
         // trim result for beauty :)
         return result.Trim();
+    }
+    public static Boolean IsDividableBy3(int number)
+    {
+        return !((number % 3) > 0);
     }
 }
