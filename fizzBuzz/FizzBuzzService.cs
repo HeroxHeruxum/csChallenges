@@ -1,4 +1,4 @@
-namespace services;
+namespace fizzBuzz;
 
 public class FizzBuzzService
 {
@@ -15,19 +15,19 @@ public class FizzBuzzService
     public static string CreateFizzBuzzForNumber(int numberToEvaluate)
     {
         string result = numberToEvaluate + ": ";
-        if (IsDividableBy3(numberToEvaluate))
+        if (IsDividableBy(numberToEvaluate, 3))
         {
             result += "Fizz";
         }
-        if ((numberToEvaluate % 5) > 0)
+        if (IsDividableBy(numberToEvaluate, 5))
         {
             result += "Buzz";
         }
         // trim result for beauty :)
         return result.Trim();
     }
-    public static Boolean IsDividableBy3(int number)
+    public static bool IsDividableBy(int number, int divider)
     {
-        return !((number % 3) > 0);
+        return number % divider == 0;
     }
 }
